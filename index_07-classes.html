@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Classes em javascript</title>
     <script src="index_07-classes.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <header class="header flex">
+      <a href="./index.html"><img alt="Logo do java script" class="imglogo" src="./768px-Unofficial_JavaScript_logo_2.svg.png"></a>
+      <!-- MENU -->
+      <nav class="topnav" id="myTopnav">
+        <a href="./index_02-tipos.html">Tipos</a>
+        <a href="./index_03-objeto.html">Objeto</a>
+        <a href="./index_04-array.html">Array</a>
+        <a href="./index_05-function.html">Função</a>
+        <a href="./index_07-classes.html">Classes</a>
+        <a href="./index_08-classes-herança.html">Classes herança</a>
+      </nav>
+    </header>
+    <div class="main">
+      <h1>Classes em javascript</h1>
+      <code>
+        <code class="comentario"
+          >//CLASSES // classes são templates de objetos (fabrica de objetos),
+          abaixo como construir uma classe // cada classe é considerada uma
+          instancia de um objeto, // podendo ser modificada sem alterar a classe
+          /* class Book { constructor() {} } */</code
+        >
+        class Book { <br />
+        constructor(autor, titulo) { <br />
+        this.autor = autor; <br />
+        this.titulo = titulo; } <br />
+        }
+        <code class="comentario">// usando a classe criada</code>
+        var book1 = new Book('Clarisse Lispector', 'Água viva');<br />
+        var book2 = new Book('Clarisse L.', 'O lustre');<br />
+        console.log(book1);<br />
+        console.log(book2);<br />
+        <code class="comentario"
+          >//CLASSES + MÉTODO (funções dentro de classes) criando
+          interação</code
+        >
+        class Filme { constructor(roteiro, titulo) { this.roteiro = roteiro;
+        this.titulo = titulo; } lingua () { console.log("pt-br"); } }
+        <code class="comentario"
+          >// usando a classe criada para criar objetos</code
+        >
+        var filme1 = new Filme('Carlos Silva', 'A pequena sereia')<br />
+        console.log(filme1);
+        <code class="comentario"
+          >// usando o método - nome_do_objeto.nome_do_metodo</code
+        >
+        filme1.lingua();
+      </code>
+    </div>
+  </body>
 </html>

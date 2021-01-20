@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Classes herenaça em javascript</title>
     <script src="index_08-classes-herança.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <header class="header flex">
+      <a href="./index.html"><img alt="Logo do java script" class="imglogo" src="./768px-Unofficial_JavaScript_logo_2.svg.png"></a>
+      <!-- MENU -->
+      <nav class="topnav" id="myTopnav">
+        <a href="./index_02-tipos.html">Tipos</a>
+        <a href="./index_03-objeto.html">Objeto</a>
+        <a href="./index_04-array.html">Array</a>
+        <a href="./index_05-function.html">Função</a>
+        <a href="./index_07-classes.html">Classes</a>
+        <a href="./index_08-classes-herança.html">Classes herança</a>
+      </nav>
+    </header>
+    <div class="main">
+      <h1>Classes herança em javascript</h1>
+      <code>
+        <code class="comentario"
+          >//HERANÇAS DE CLASSES // CLASSES são templates de objetos (fábrica de
+          objetos), abaixo como // construir uma classe // HERANÇA extende
+          propriedade de clases existente</code
+        >
+        class Animal { <br />
+        constructor(name) { <br />
+        this.name = name; <br />
+        }<br />
+        }<br />
+        class Dog extends Animal { //classe dog herda classe Animal } <br />
+        var dog = new Dog('Pug');<br />
+        console.log(dog)<br />
+      </code>
+    </div>
+  </body>
 </html>

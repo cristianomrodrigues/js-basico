@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tipos em javascript</title>
     <script src="index_02-tipos.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <header class="header flex">
+      <a href="./index.html"><img alt="Logo do java script" class="imglogo" src="./768px-Unofficial_JavaScript_logo_2.svg.png"></a>
+      <!-- MENU -->
+      <nav class="topnav" id="myTopnav">
+        <a href="./index_02-tipos.html">Tipos</a>
+        <a href="./index_03-objeto.html">Objeto</a>
+        <a href="./index_04-array.html">Array</a>
+        <a href="./index_05-function.html">Função</a>
+        <a href="./index_07-classes.html">Classes</a>
+        <a href="./index_08-classes-herança.html">Classes herança</a>
+      </nav>
+    </header>
+    <div class="main">
+    <h1>Tipos em javascript</h1>
+    <code>
+        let name;<br>
+name = 'Jose';<br>
+console.log(name);<br>
+
+<code class="comentario">//Primitivas ou Tipos de Valor</code class="comentario">
+
+let nameMan = 'Jose'; // string<br>
+let age = 30; // numero<br>
+let aproved = false; //booleean<br>
+let firstName = undefined; //undefined<br>
+let color = null; //null<br>
+
+<code class="comentario">// acessando primeira letra do nome na posição 0 de uma variável</code class="comentario">
+var primeiroNome = "Cristiano";<br>
+primeiraLetra = primeiroNome[0];<br>
+console.log(primeiroNome);<br>
+
+<code class="comentario">// mostrando tamanho da variavel primeiroNome</code class="comentario">
+console.log(primeiroNome.length);
+
+<code class="comentario">// acessando ultima letra d nome na posição lenght, que é 9, -1</code class="comentario">
+var ultimaLetra = primeiroNome[primeiroNome.length-1];<br>
+console.log(ultimaLetra);<br>
+    </code class="comentario">
+    
+    
+</code>
+</div>
+  </body>
 </html>

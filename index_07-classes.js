@@ -19,7 +19,7 @@ class Book {
 // usando a classe criada
 
 var book1 = new Book('Clarisse Lispector', 'Água viva');
-var book2 = new Book('Clarisse L.', 'Roda viva');
+var book2 = new Book('Clarisse L.', 'O lustre');
 
 console.log(book1);
 console.log(book2);
@@ -31,10 +31,10 @@ class Filme {
         this.roteiro = roteiro;
         this.titulo = titulo;
     }
-lingua () {
-    console.log("pt-br");
-}
+    lingua() {
+        console.log("pt-br");
     }
+}
 
 // usando a classe criada para criar objetos
 
