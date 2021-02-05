@@ -16,7 +16,12 @@
 
   <body>
     <header class="header flex">
-      <a href="./index.html"><img alt="Logo do java script" class="imglogo" src="./768px-Unofficial_JavaScript_logo_2.svg.png"></a>
+      <a href="./index.html"
+        ><img
+          alt="Logo do java script"
+          class="imglogo"
+          src="./768px-Unofficial_JavaScript_logo_2.svg.png"
+      /></a>
       <!-- MENU -->
       <nav class="topnav" id="myTopnav">
         <a href="./index_02-tipos.html">Tipos</a>
@@ -31,25 +36,45 @@
       <h1>Função em javascript</h1>
       <code>
         <code class="comentario">//Tipos de Referencia - FUNCTION</code>
-        function digaOla() {
         <code class="comentario">// sem parametros</code>
-        console.log('01: ' + 'Olá, como vai!'); } digaOla();
-        <code class="comentario">/***********/</code>
-        function digaOla2(nome) {
-        <code class="comentario">// com parametro</code> console.log('02: ' +
-        'Olá, como vai ' + nome + ''); } digaOla2('Cristiano');
+        function digaOla() {<br />
+        console.log('#01: ' + 'Olá, como vai!'); } <br />
+        digaOla();<br />
+        <code class="comentario">// com parametro</code>
+        function digaOla2(nome) {<br />
+        console.log('#02: ' + 'Olá, como vai ' + nome +''); }<br />
+        digaOla2('Cristiano');<br />
         <code class="comentario">/***********/</code>
         function juntarNome() {<br />
         var nome = 'João'; <br />
         var sobrenome = 'Mendonça'; <br />
         var jun = '' return (jun=(nome + ' ' + sobrenome)); <br />} <br />
-        console.log('03: ' + juntarNome());<br />
+        console.log('#03: ' + juntarNome());<br />
         <code class="comentario">/***********/</code>
         function palavras (sbstan, adjtivo, verbox) { <br />
         console.log('O ' + sbstan + ' ' + verbox + ' a ' + adjtivo + ' roupa do
         varal');<br />
         }<br />
         console.log(palavras('rato', 'velha', 'roeu'));
+      </code>
+      <h2>Função comum Vs. Função anonima</h2>
+      <code>
+        <code class="comentario">/comum/</code>
+        function aoQuadrado(numero) {<br />
+        return numero * numero;<br />
+        }<br />
+        <code class="comentario">/anonima/</code>
+        function (numero) {<br />
+        return numero * numero;<br />
+        }<br />
+        <code class="comentario"
+          >/arrow - quando função retorna apenas um valor /</code
+        >
+        const aoQuadrado = (numero) => numero * numero;<br />
+        <code class="comentario"
+          >/arrow - ou /</code>
+          
+        <br />
       </code>
     </div>
   </body>
