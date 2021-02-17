@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Function em javascrit</title>
     <script src="index_05-function.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -23,14 +24,12 @@
           src="./768px-Unofficial_JavaScript_logo_2.svg.png"
       /></a>
       <!-- MENU -->
-      <nav class="topnav" id="myTopnav">
-        <a href="./index_02-tipos.html">Tipos</a>
-        <a href="./index_03-objeto.html">Objeto</a>
-        <a href="./index_04-array.html">Array</a>
-        <a href="./index_05-function.html">Função</a>
-        <a href="./index_07-classes.html">Classes</a>
-        <a href="./index_08-classes-herança.html">Classes herança</a>
-      </nav>
+      <div id="nav-local"></div>
+      <script>
+        $(function(){
+          $("#nav-local").load("menu.html");
+        });
+        </script>
     </header>
     <div class="main">
       <h1>Função em javascript</h1>
