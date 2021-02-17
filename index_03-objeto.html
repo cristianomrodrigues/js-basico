@@ -1,60 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Objetos em javascript</title>
     <script src="index_03-objeto.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS: this stylesheet override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-  <body>
+<body>
     <header class="header flex">
-      <a href="./index.html"><img alt="Logo do java script" class="imglogo" src="./768px-Unofficial_JavaScript_logo_2.svg.png"></a>
-      <!-- MENU -->
-      <nav class="topnav" id="myTopnav">
-        <a href="./index_02-tipos.html">Tipos</a>
-        <a href="./index_03-objeto.html">Objeto</a>
-        <a href="./index_04-array.html">Array</a>
-        <a href="./index_05-function.html">Função</a>
-        <a href="./index_07-classes.html">Classes</a>
-        <a href="./index_08-classes-herança.html">Classes herança</a>
-      </nav>
+        <!-- MENUS -->
+        <a id="ddmenuLink" href="menu.html">Menu</a>
+        <!-- MENUS fim-->
     </header>
     <div class="main">
-      <h1>Objetos em javascript</h1>
-      <code>
-        <code class="comentario">//Tipos de Referencia - OBJETO</code>
+        <h1>Objetos em javascript</h1>
+        <code>
+        <code class="comentario">//Tipos de Referencia - OBJETO</code> let person = { name: 'Paulo', age: 30, employed: true } console.log(person);
 
-        let person = { name: 'Paulo', age: 30, employed: true }
-        console.log(person);
-
-        <code class="comentario"
-          >//******* Notação com ponto - mais usado *******//</code
+        <code class="comentario">//******* Notação com ponto - mais usado *******//</code
         >
         person.age = 45; console.log(person.age);
 
-        <code class="comentario">//******* Notação em Bracket *******//</code>
-        person['age'] = 55; console.log(person.age);
+        <code class="comentario">//******* Notação em Bracket *******//</code> person['age'] = 55; console.log(person.age);
 
-        <code class="comentario">//******* Notação em Bracket *******//</code>
-        var selecao = 65; person['age'] = selecao;
-        console.log(person.age);</code
-      >
+        <code class="comentario">//******* Notação em Bracket *******//</code> var selecao = 65; person['age'] = selecao; console.log(person.age);
+        </code>
     </div>
-  </body>
+    <!-- jQuery -->
+    <script src="js/ddmenu.js" type="text/javascript"></script>
+    <!-- JavaScript is required for the dropdown menu -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="js/bootstrap.js"></script>
+</body>
+
 </html>
