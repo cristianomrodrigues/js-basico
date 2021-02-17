@@ -1,84 +1,97 @@
 /* VARIÁVEIS FIM */
 
 :root {
-  font-size: 16px;
-  --tamp: 1rem;
-  --tamm: 1.625rem;
-  --tamg: 2.25rem;
-  --tamgg: 2.875rem;
-  padding: 25px 10px 10px 10px;
-  font-family: "IBM Plex Serif", serif;
+    font-size: 16px;
+    --tamp: 1rem;
+    --tamm: 1.625rem;
+    --tamg: 2.25rem;
+    --tamgg: 2.875rem;
+    padding: 25px 10px 10px 10px;
+    font-family: "IBM Plex Serif", serif;
 }
 
 code {
-  line-height: var(--tamg);
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
+    line-height: var(--tamg);
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
 }
 
 code.comentario {
-  color: blueviolet;
-  tam-weight: bold;
-  line-height: var(--tamm);
+    color: blueviolet;
+    tam-weight: bold;
+    line-height: var(--tamm);
 }
 
 .imglogo {
-  width: 40px;
-  margin-right: 20px;
-  order: -1;
+    width: 40px;
+    margin-right: 20px;
+    order: -1;
 }
 
 h1 {
-  line-height: var(--tamg);
-  font-size: var(--tamg);
-}
-/* DISPLAY */
-.flex {
-  display: flex;
-}
-.flex .jc-c {
-  justify-content: center;
+    line-height: var(--tamg);
+    font-size: var(--tamg);
 }
 
-/* BARRA LATERAL */
+
+/* DISPLAY */
+
+.flex {
+    display: flex;
+}
+
+.flex .jc-c {
+    justify-content: center;
+}
+
+
+/*----------- MENU ------------- */
 
 .topnav {
-  font-size: var(--tamm);
-  display: block;
+    font-size: var(--tamm);
+    display: block;
 }
+
 
 /* Style the links inside the navigation bar */
+
 .topnav a {
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-  tam-size: var(--tamg);
+    text-align: center;
+    text-decoration: none;
+    padding: 8x;
+    tam-size: var(--tamg);
 }
+
 
 /* Change the color of links on hover */
+
 .topnav a:hover {
-  background-color: rgb(82, 153, 0);
-  border-radius: 16px;
-  color: rgb(255, 255, 255);
+    background-color: rgb(82, 153, 0);
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
 }
 
+
 /* Add an active class to highlight the current page */
+
 .topnav a:active {
-  background-color: #551b61;
-  color: white;
+    background-color: #551b61;
+    color: white;
 }
+
 
 /* Visibilidade
 640px, 1024px, 1400px - em construção*/
 
 .hide-for-mobile-640px {
-  display: none;
+    display: none;
 }
 
-.hide-for-desktop {
-}
+.hide-for-desktop {}
+
 
 /* .topnav {
 padding: 20px 0px 0px 20px;} */
